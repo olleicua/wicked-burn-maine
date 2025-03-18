@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+INDENT_CONTENT = ' ' * 4
+LAYOUT_FILENAME = 'page_layout.html'
+PAGES = {
+  'index.html' => 'index.html',
+  'tickets.html' => 'tickets',
+}
+
+layout = File.read("src/#{LAYOUT_FILENAME}")
+
+puts "building"
+PAGES.each do |src_filename, dist_filename|
+  puts "dist/#{dist_filename}"
+
+  src = File.read("src/#{src_filename}")
+  indented_src = src.lines.map do |line|
+    "#{INDENT_CONTENT}#{line}"
+  end.join('')
+
+  dist = layout.sub("{{CONTENT}}\n", indented_src)
+  File.write("dist/#{dist_filename}", dist)
+end
