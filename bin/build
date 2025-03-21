@@ -4,7 +4,8 @@ INDENT_CONTENT = ' ' * 4
 LAYOUT_FILENAME = 'page_layout.html'
 PAGES = {
   'index.html' => 'index.html',
-  'tickets.html' => 'tickets',
+  'tickets.html' => 'tickets/index.html',
+  'principles.html' => 'principles/index.html',
 }
 
 layout = File.read("src/#{LAYOUT_FILENAME}")

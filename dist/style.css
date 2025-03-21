@@ -6,11 +6,15 @@ body {
   font-size: 16px;
 }
 
-.headers {
+.headers, .navigation {
   width: 100%;
   background: #fff;
   text-align: center;
   border-bottom: 3px solid #8c1a11;
+}
+
+a {
+  color: #8c1a11;
 }
 
 img.logo {
@@ -35,6 +39,24 @@ img.logo {
   font-size: 25px;
 }
 
+.navigation {
+  display: flex;
+  padding: 0.5rem 0;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.navigation a {
+  font-size: 18px;
+  color: #8c1a11;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation a:hover, .navigation a.active {
+  text-decoration: underline;
+}
+
 .content {
   padding: 0 5%;
 }
@@ -49,6 +71,12 @@ img.logo {
   text-align: center;
   color: #8c1a11;
   font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 h3 {
@@ -75,4 +103,15 @@ h3 {
   margin: 15px;
   padding: 6px 15px;
   text-decoration: none;
+}
+
+.schedule {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  column-gap: 20px;
+  row-gap: 4px;
+}
+
+.schedule .date {
+  text-align: right;
 }

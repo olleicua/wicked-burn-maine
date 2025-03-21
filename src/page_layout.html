@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Macondo&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <title>wicked burn</title>
 </head>
 <body>
   <div class="headers">
-    <img class="logo" alt="logo: picture of a pine tree with a swirly flame design" src="logo_transparent_small.png" />
+    <img class="logo" alt="logo: picture of a pine tree with a swirly flame design" src="/logo_transparent_small.png" />
     <h1>Wicked Burn</h1>
-    <h2>A burning man style inspired in Maine</h2>
+    <h2>A burning man inspired event in Maine</h2>
   </div>
+  <div class="navigation">
+    <a href="/">Home</a>
+    <a href="/tickets/">Tickets</a>
+    <a href="/principles/">Principles</a>
+  </div>
+  <script>
+    const activeLink = document.querySelector(`.navigation a[href="${location.pathname}"]`);
+    if (activeLink) { activeLink.classList.add('active'); }
+  </script>
   <div class="content">
     <p class="dates">
       Wicked Burn 2025 will be Friday May 23rd - Monday May 26th
     </p>
 {{CONTENT}}
+    <h3>Contact us</h3>
+    <p>
+      Send your questions and/or comments to the Wicked Burn organizers at <a href="mailto:wickedburnmaine@gmail.com">wickedburnmaine@gmail.com</a>
   </div>
 </body>
 </html>
