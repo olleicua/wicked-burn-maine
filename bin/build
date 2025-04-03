@@ -6,6 +6,7 @@ PAGES = {
   'index.html' => 'index.html',
   'tickets.html' => 'tickets/index.html',
   'principles.html' => 'principles/index.html',
+  'survival_guide.html' => 'survival_guide/index.html',
 }
 
 layout = File.read("src/#{LAYOUT_FILENAME}")
