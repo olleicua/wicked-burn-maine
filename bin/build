@@ -19,7 +19,7 @@ PAGES.each do |src_filename, dist_filename|
 
   src = File.read("src/#{src_filename}")
   indented_src = src.lines.map do |line|
-    "#{INDENT_CONTENT}#{line}"
+    line == "\n" ? line : "#{INDENT_CONTENT}#{line}"
   end.join('')
 
   dist = layout.sub("{{CONTENT}}\n", indented_src)
