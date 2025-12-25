@@ -6,6 +6,7 @@ PAGES = {
   'index.html' => 'index.html',
   'tickets.html' => 'tickets/index.html',
   'principles.html' => 'principles/index.html',
+  'calendar.html' => 'calendar/index.html',
   'survival_guide.html' => 'survival_guide/index.html',
   'event_policies.html' => 'event_policies/index.html',
   'code_of_conduct.html' => 'code_of_conduct/index.html',

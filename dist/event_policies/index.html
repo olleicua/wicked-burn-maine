@@ -23,8 +23,21 @@
     <h1>Wicked Burn</h1>
     <h2>A burning man inspired event in Maine</h2>
   </div>
+  <script>
+    var $headers = document.querySelector('.headers');
+    [
+      $headers.querySelector('.logo'),
+      $headers.querySelector('h1')
+    ].map(($element) => {
+      $element.style.cursor = 'pointer';
+      $element.addEventListener('click', () => {
+	window.location = '/';
+      });
+    });
+  </script>
   <div class="navigation">
     <a href="/">Home</a>
+    <a href="/calendar/">Calendar</a>
     <a href="/principles/">Principles</a>
     <a href="/survival_guide/">Survival Guide</a>
     <a href="/event_policies/">Event Policies</a>
@@ -113,9 +126,13 @@
     </p>
     <h3 id="contact-us">Contact us</h3>
     <p>
-      Send your questions and/or comments to the Wicked Burn organizers at <a href="mailto:wickedburnmaine@gmail.com">wickedburnmaine@gmail.com</a>
-      <br />
-      You can also <a href="https://www.facebook.com/groups/643176235068242" target="_blank">join the conversation on Facebook</a>.
+      Send your questions and/or comments to the Wicked Burn organizers at <a href="mailto:wickedburnmaine@gmail.com">wickedburnmaine@gmail.com</a>.
+    </p>
+    <p>
+      You can also join the conversation on
+      <a href="https://discord.gg/XsuGMwgjkE" target="_blank">Discord</a>
+      or
+      <a href="https://www.facebook.com/groups/643176235068242" target="_blank">Facebook</a>.
     </p>
     <hr />
     <p>
