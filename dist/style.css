@@ -43,7 +43,7 @@ img.logo {
   display: flex;
   flex-wrap: wrap;
   padding: 0.5rem 0;
-  gap: 0.8rem;
+  gap: 1.1rem;
   justify-content: center;
 }
 
@@ -150,4 +150,14 @@ h3 {
 .gallery .thumbnails img.vertical {
   margin-left: min(35px, 3vmin);
   margin-right: min(35px, 3vmin);
+}
+
+.art-grant-info-table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.art-grant-info-table > * {
+  margin-bottom: 0.2rem;
 }

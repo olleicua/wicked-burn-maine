@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Macondo&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/style.css">
+
+    <title>wicked burn</title>
+</head>
+<body>
+  <div class="headers">
+    <img class="logo" alt="logo: picture of a pine tree with a swirly flame design" src="/logo_transparent_small.png" />
+    <h1>Wicked Burn</h1>
+    <h2>A burning man inspired event in Maine</h2>
+  </div>
+  <script>
+    var $headers = document.querySelector('.headers');
+    [
+      $headers.querySelector('.logo'),
+      $headers.querySelector('h1')
+    ].map(($element) => {
+      $element.style.cursor = 'pointer';
+      $element.addEventListener('click', () => {
+	window.location = '/';
+      });
+    });
+  </script>
+  <div class="navigation">
+    <a href="/">Home</a>
+    <a href="/calendar/">Calendar</a>
+    <a href="/tickets/">Tickets</a>
+    <a href="/art_grants/">Art Grants</a>
+    <a href="/theme_camps/">Theme Camps</a>
+    <a href="/principles/">Principles</a>
+    <a href="/survival_guide/">Survival Guide</a>
+    <a href="/event_policies/">Event Policies</a>
+    <a href="/code_of_conduct/">Code of Conduct</a>
+  </div>
+  <script>
+    const activeLink = document.querySelector(`.navigation a[href="${location.pathname}"]`);
+    if (activeLink) { activeLink.classList.add('active'); }
+  </script>
+  <div class="content">
+    <h3>Wicked Burn 2026 Art Grants - Request for Proposals</h3>
+
+    <p>
+      <b>RFP Release Date:</b> January 15, 2026<br />
+      <b>Proposal Deadline:</b> February 14, 2026 (11:59 PM ET)<br />
+      <b>Notification of Awards:</b> February 28, 2026<br />
+      <b>Application URL:</b> <a href="https://forms.gle/CukrcM6eMog65ZoD7" target="_blank">https://forms.gle/CukrcM6eMog65ZoD7</a><br />
+      <b>Email for Inquiries:</b> <a href="mailto:artgrants@wickedburn.social">artgrants@wickedburn.social</a>
+    </p>
+
+    <p>
+      Wicked Burn is a <b>participant-driven community event</b> held in the woods of Maine, guided by the Burning Man Principles—including Radical Inclusion, Radical Self-Expression, Gifting, Participation, and Leaving No Trace—which shape all aspects of our culture, art, and shared experience.
+    </p>
+
+    <p>
+      Wicked Burn 2026 will be our <b>second annual event</b>, with an <b>expected attendance of approximately 150 participants</b>. The intentionally small scale fosters close interaction between artists and the community, allowing art to be experienced in a more intimate and participatory way.
+    </p>
+
+    <p>
+      The theme for <b>Wicked Burn 2026</b> is <b>"Nocturnal Bloom"</b>—a celebration of glowing installations, emergent forms, and creative expressions that unfurl through woodland shadows and night firelight. While artists are encouraged to draw inspiration from the theme, <b>there is no requirement that funded art directly reflect it</b>.
+    </p>
+
+    <p>
+      We invite artists and creative teams to propose <b>art installations, interactive pieces, or environmental integrations</b> to be included in Wicked Burn 2026.
+    </p>
+
+    <h3>Grant Funding Availability</h3>
+
+    <p>
+      We anticipate awarding <b>5–8 art grants</b>, with a <b>total budget of approximately $1,000</b>.
+    </p>
+
+    <p>
+      Grants are <b>typically disbursed as reimbursements after the event</b>, once the artwork has been brought to and installed at Wicked Burn. Applicants may request <b>partial pre-event funding</b> if there is a compelling need to purchase essential materials in advance. If so, please explain this clearly in your application.
+    </p>
+
+    <h3>Eligibility</h3>
+
+    <p>
+      All artists and collectives are welcome to apply. There are no strict restrictions on project subject matter; however, proposed works should align with Wicked Burn's community culture, principles, and expectations around participation, safety, and Leave No Trace.
+    </p>
+
+    <h3>Scheduling Considerations</h3>
+
+    <p>
+      Load in and set up for artist projects will be Thursday, May 21, starting at 12pm.
+    </p>
+
+    <p>
+      Projects may be broken down and loaded out starting at 8am on Monday, May 25th. All projects must be loaded out by 2pm on the afternoon of May 25th.
+    </p>
+
+    <h3>Proposal Submission Requirements</h3>
+
+    <p>Your application must include the following:</p>
+
+    <ol>
+      <li>
+        <b>Project Title & Lead Artist Contact</b>
+        <ul>
+          <li>Name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Social media or portfolio links (optional)</li>
+        </ul>
+      </li>
+      <li>
+        <b>Art Project Description</b>
+        <ul>
+          <li>Project concept</li>
+          <li>How it aligns with <i>Nocturnal Bloom</i> and/or Wicked Burn's values</li>
+          <li>How participants will engage or interact with the piece</li>
+        </ul>
+      </li>
+      <li>
+        <b>Installation Plan</b>
+        <ul>
+          <li>Rough sketch, rendering, or photos (if available)</li>
+          <li>Approximate dimensions and placement considerations</li>
+          <li>Materials list</li>
+        </ul>
+      </li>
+      <li>
+        <b>Budget</b>
+        <ul>
+          <li>Cost estimate with brief rationale</li>
+          <li>Amount requested from the Wicked Burn art grant</li>
+        </ul>
+      </li>
+      <li>
+        <b>Experience / Team</b>
+        <ul>
+          <li>Brief bio of the artist(s) or collective</li>
+          <li>Past builds, relevant experience, or similar projects</li>
+        </ul>
+      </li>
+      <li>
+        <b>Special Funding Considerations</b>
+        <ul>
+          <li>If you must receive any portion of the grant <b>before</b> the event, explain the need and amount requested here.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h3>Selection Criteria</h3>
+
+    <p>Proposals will be evaluated based on:</p>
+
+    <ul>
+      <li><b>Creativity &amp; Vision</b> — Artistic quality, originality, and concept</li>
+      <li><b>Feasibility &amp; Safety</b> — Realistic scope and a clear plan for safe installation</li>
+      <li><b>Alignment with Community Values</b> — Embodiment of Radical Self-Expression, Participation, and Leave No Trace</li>
+      <li><b>Clarity &amp; Completeness</b> — Thoughtful, complete responses to all application elements</li>
+    </ul>
+
+    <h3>Grant Terms</h3>
+
+    <ul>
+      <li>
+        <b>Payment Structure:</b> Art grants are generally reimbursed <b>after the event</b>, once the artwork is present at Wicked Burn. Limited pre-event funding exceptions may be considered if justified in the application.
+      </li>
+      <li>
+        <b>Tickets &amp; Access:</b> Artists selected by <b>February 28, 2026</b> will be <b>guaranteed the opportunity to purchase event tickets</b>.
+        <ul>
+          <li>
+    	<b>Event ticket:</b> $55 per person (suggested)
+          </li>
+          <li>
+    	<b>Parking pass:</b> $15 per vehicle<br />
+    	Artists are responsible for purchasing their own tickets and parking passes. Wicked Burn sold out last year, so guaranteed access applies only to artists selected by the grant decision date.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Installation Requirements:</b> Artists are responsible for transporting, installing, maintaining, and removing their artwork. All projects must adhere to <b>Leave No Trace</b> expectations.
+      </li>
+      <li>
+        <b>Fire & Special Effects:</b> Any fire, flame, or special effects elements must comply with all Wicked Burn fire safety policies and receive approval from the art lead and fire safety team, as applicable.
+      </li>
+    </ul>
+
+    <div class="art-grant-info-table">
+      <span><b>Timeline Milestone</b></span>
+      <span><b>Date</b></span>
+      <span>RFP Released</span>
+      <span>January 15, 2026</span>
+      <span>Proposal Deadline</span>
+      <span>February 14, 2026</span>
+      <span>Grant Decisions Announced</span>
+      <span>February 28, 2026</span>
+      <span>Set Up Day</span>
+      <span>May 21, 2026</span>
+      <span>Event Dates</span>
+      <span>May 22–25, 2026</span>
+    </div>
+
+    <h3>How to Apply</h3>
+
+    <p>
+      Please visit <a href="https://forms.gle/CukrcM6eMog65ZoD7" target="_blank">https://forms.gle/CukrcM6eMog65ZoD7</a> to submit your proposal.
+    </p>
+    <hr />
+    <h3 id="contact-us">Contact us</h3>
+    <p>
+      Send your questions and/or comments to the Wicked Burn organizers at <a href="mailto:wickedburnmaine@gmail.com">wickedburnmaine@gmail.com</a>.
+    </p>
+    <p>
+      You can also join the conversation on
+      <a href="https://discord.gg/XsuGMwgjkE" target="_blank">Discord</a>
+      or
+      <a href="https://www.facebook.com/groups/643176235068242" target="_blank">Facebook</a>.
+    </p>
+    <hr />
+    <p>
+      <a href="https://burningman.org/">Burning man Project</a> has recognized Wicked Burn as an official Regional Event however Burning Man Project is not a producer or organizer of Wicked Burn, and Burning Man Project accepts no liability arising out of or in connection with Wicked Burn.
+  </div>
+</body>
+</html>
