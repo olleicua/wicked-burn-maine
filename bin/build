@@ -5,6 +5,7 @@ LAYOUT_FILENAME = 'page_layout.html'
 PAGES = {
   'index.html' => 'index.html',
   'tickets.html' => 'tickets/index.html',
+  'volunteer.html' => 'volunteer/index.html',
   'art_grants.html' => 'art_grants/index.html',
   'theme_camps.html' => 'theme_camps/index.html',
   'principles.html' => 'principles/index.html',

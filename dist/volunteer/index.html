@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Macondo&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/style.css">
+
+    <title>wicked burn</title>
+</head>
+<body>
+  <div class="headers">
+    <img class="logo" alt="logo: picture of a pine tree with a swirly flame design" src="/logo_transparent_small.png" />
+    <h1>Wicked Burn</h1>
+    <h2>A burning man inspired event in Maine</h2>
+  </div>
+  <script>
+    var $headers = document.querySelector('.headers');
+    [
+      $headers.querySelector('.logo'),
+      $headers.querySelector('h1')
+    ].map(($element) => {
+      $element.style.cursor = 'pointer';
+      $element.addEventListener('click', () => {
+	window.location = '/';
+      });
+    });
+  </script>
+  <div class="navigation">
+    <a href="/">Home</a>
+    <a href="/calendar/">Calendar</a>
+    <a href="/tickets/">Tickets</a>
+    <a href="/volunteer/">Volunteer</a>
+    <a href="/art_grants/">Art Grants</a>
+    <a href="/theme_camps/">Theme Camps</a>
+    <a href="/principles/">Principles</a>
+    <a href="/survival_guide/">Survival Guide</a>
+    <a href="/event_policies/">Event Policies</a>
+    <a href="/code_of_conduct/">Code of Conduct</a>
+  </div>
+  <script>
+    const activeLink = document.querySelector(`.navigation a[href="${location.pathname}"]`);
+    if (activeLink) { activeLink.classList.add('active'); }
+  </script>
+  <div class="content">
+    <h3>Volunteering at Wicked Burn 2026</h3>
+
+    <p>
+      I have my ticket- now what? Volunteer! We need all participants to get involved and make this burn come to life!
+    </p>
+
+    <p>
+      Once you have purchased your ticket, please click the link below to pick your shifts by filling in your name and email in the spreadsheet. Two shifts per participant is ideal.
+    </p>
+
+    <p style="text-align: center;">
+      <a style="font-weight: bold;" href="https://docs.google.com/spreadsheets/d/1R3PLySeWkcSrSnRjmH_DJjhOGM7nq6tKOXat2yQDXRE/edit?gid=1961253845#gid=1961253845" target="_blank">CLICK HERE TO SIGN UP FOR VOLUNTEER SHIFTS</a>
+    </p>
+
+    <h3>Volunteer Role Descriptions</h3>
+
+    Gate/Greet:<br />
+    As a Gate & Greeting volunteer you will:
+    <ul>
+      <li>Welcome fellow burners home to Wicked Burn</li>
+      <li>Double check ticket and parking pass status for those arriving</li>
+      <li>Provide brief education on LNT, volunteering, consent, etc</li>
+      <li>Provide wristbands, parking passes, swag, etc</li>
+      <li>Send everyone down the proper driving path so they can drop off gear and then park</li>
+    </ul>
+
+    Parking/Parking Exodus<br />
+    As a Parking/Parking Exodus volunteer you will:
+    <ul>
+      <li>Assist with efficient parking in and/or exit from our limited parking areas</li>
+      <li>Ensure parking passes distributed at gate are in place on dashboards</li>
+      <li>Act as a crossing guard to help participants safely cross the road</li>
+      <li>Act as traffic control along the driving path within the burn area</li>
+    </ul>
+
+    Lighting/Signage Set Up/Tear Down<br />
+    As a Lighting/Signage Setup Or Tear Down volunteer you will:
+    <ul>
+      <li>Assist the Lighting and/or Signage teams in placing or removing lighting and signage from pathways</li>
+    </ul>
+
+    Centah Camp Set Up/Tear Down<br />
+    As a Centah Camp Setup or Tear Down volunteer you will:
+    <ul>
+      <li>Assist the Centah Camp team in setting up or tearing down the centah camp tent and other setups (coffee stations, seating areas, etc)</li>
+    </ul>
+
+    Cubs (floaters)<br />
+    As a Cub volunteer you will:
+    <ul>
+      <li>Report to the “Honey Pot” (meeting point at Centah camp) at the beginning of your shift to either meet the  Mama Bear (OOD aka Officer of the Day) or using the Honey Pot radio to reach them</li>
+      <li>The Mama Bear will then assign you to a job which could be filling in for any of the other departments as needed, fulfilling another needed task, or shadowing the Mama Bear</li>
+    </ul>
+
+    LNT (Leave No Trace)<br />
+    As a LNT volunteer you will:
+    <ul>
+      <li>Sweep assigned areas (trails, campsites, burn sites, etc) for MOOP (matter out of place), collect MOOP, and leave bagged MOOP in designated area</li>
+    </ul>
+
+    Sanctuary<br />
+    As a Sanctuary volunteer you will:
+    <ul>
+      <li>Hold space at Sanctuary for those that need a quiet space to decompress, are overwhelmed, or are having a hard time</li>
+      <li>Tasks could include simply being present, having a conversation with someone who needs an ear, or connecting with medical to address any escalating issues</li>
+    </ul>
+
+    Centah Camp<br />
+    As a Centah Camp volunteer you will:
+    <ul>
+      <li>Make and serve hot beverages (coffee, tea, hot chocolate)</li>
+      <li>Provide warm, cozy, welcoming vibes</li>
+      <li>Tidy up and keep the area MOOP (matter out of place) free</li>
+      <li>Support any events occurring in the centah camp space</li>
+    </ul>
+
+    Effigy and Temple Burn Perimeter<br />
+    As an Effigy and/or Temper Burn Perimeter volunteer you will:
+    <ul>
+      <li>Work with the Fire Safety and Effigy/Temple build leads to establish a safe perimeter around the burn</li>
+      <li>You will hold this perimeter and prevent any participants from getting closer than you are to the burn</li>
+      <li>You will hold this perimeter until released by the Fire Safety and Effigy/Temple build leads</li>
+    </ul>
+    <hr />
+    <h3 id="contact-us">Contact us</h3>
+    <p>
+      Send your questions and/or comments to the Wicked Burn organizers at <a href="mailto:wickedburnmaine@gmail.com">wickedburnmaine@gmail.com</a>.
+    </p>
+    <p>
+      You can also join the conversation on
+      <a href="https://discord.gg/XsuGMwgjkE" target="_blank">Discord</a>
+      or
+      <a href="https://www.facebook.com/groups/643176235068242" target="_blank">Facebook</a>.
+    </p>
+    <hr />
+    <p>
+      <a href="https://burningman.org/">Burning man Project</a> has recognized Wicked Burn as an official Regional Event however Burning Man Project is not a producer or organizer of Wicked Burn, and Burning Man Project accepts no liability arising out of or in connection with Wicked Burn.
+  </div>
+</body>
+</html>
