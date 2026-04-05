@@ -46,7 +46,7 @@ img.logo {
 .nav-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem 1.1rem;
+  gap: 0.6rem 1.2rem;
   justify-content: center;
   max-width: 780px;
   margin: 0 auto;
@@ -166,4 +166,10 @@ h3 {
 
 .art-grant-info-table > * {
   margin-bottom: 0.2rem;
+}
+
+@media (max-width: 480px) {
+  .nav-content {
+    padding: 0 0.5rem;
+  }
 }
