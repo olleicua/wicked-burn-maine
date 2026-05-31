@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "docu": "file:../../docu-js"
+  }
+}

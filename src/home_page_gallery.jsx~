@@ -1,0 +1,11 @@
+const $gallery2025 = document.getElementById('gallery-2025');
+
+document.currentScript.after(
+  <p>
+    <button
+      onClick={() => {
+        
+      }}>
+      
+    </button>
+);

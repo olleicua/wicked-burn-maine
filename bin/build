@@ -29,3 +29,6 @@ PAGES.each do |src_filename, dist_filename|
   dist = layout.sub("{{CONTENT}}\n", indented_src)
   File.write("dist/#{dist_filename}", dist)
 end
+
+puts "\ncompiling src/*.jsx to dist/*.js"
+puts `npx docu src dist`

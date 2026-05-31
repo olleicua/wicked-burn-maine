@@ -123,6 +123,25 @@ h3 {
   text-align: right;
 }
 
+.gallery-year-picker {
+  text-align: center;
+}
+
+.gallery-year-picker button {
+  margin: 0 1.2rem;
+  border: 2px solid #8c1a11;
+  background: #fff;
+  color: #8c1a11;
+  padding: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallery-year-picker button.active {
+  background: #8c1a11;
+  color: #fff;
+}
+
 .gallery {
   width: 97%;
   max-width: 750px;
